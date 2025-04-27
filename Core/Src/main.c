@@ -25,7 +25,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "fatfs_sd.h"
+#include "string.h"
+#include "stdio.h"
+#include "sd_driver.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +60,12 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int fputc(int ch, FILE *f)
+{
+    (void)f;                                            // 避免未使用参数警告
+    HAL_UART_Transmit(&huart1, (const uint8_t *)&ch, 1, 500);  // 通过UART发送单个字符
+    return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -93,7 +101,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-
+  SD_Test();
   /* USER CODE END 2 */
 
   /* Infinite loop */

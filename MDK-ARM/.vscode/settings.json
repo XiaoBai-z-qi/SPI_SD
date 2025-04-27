@@ -12,6 +12,9 @@
         "type_traits": "c",
         "istream": "c",
         "streambuf": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "fatfs.h": "c",
+        "stdio.h": "c",
+        "sd_driver.h": "c"
     }
 }
