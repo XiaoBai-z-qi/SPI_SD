@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "fatfs_sd.h": "c",
+        "cstddef": "c",
+        "string": "c",
+        "optional": "c",
+        "limits": "c",
+        "memory": "c",
+        "new": "c",
+        "functional": "c",
+        "type_traits": "c",
+        "istream": "c",
+        "streambuf": "c",
+        "main.h": "c"
+    }
+}
