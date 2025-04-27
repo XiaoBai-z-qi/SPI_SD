@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/STM32F1xx_HAL_Driver/Inc;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/STM32F1xx_HAL_Driver/Inc;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Drivers\My_Drivers\FATFS_SD;..\Drivers\My_Drivers\Inc;..\Drivers\My_Drivers\Src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -551,6 +551,16 @@
               <FileName>ccsbcs.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Middlewares/Third_Party/FatFs/src/option/ccsbcs.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/My_Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>fatfs_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\My_Drivers\FATFS_SD\fatfs_sd.c</FilePath>
             </File>
           </Files>
         </Group>
